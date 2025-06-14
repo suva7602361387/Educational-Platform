@@ -23,7 +23,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:[" http://localhost:5173","https://educational-platform-3fa3.vercel.app"],
+		origin:" http://localhost:5173"||"https://educational-platform-3fa3.vercel.app",
+		methods:"GET,HEAD,PUT,PATCH,POST,DELETE",
 		credentials:true,
 	})
 )
