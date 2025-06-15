@@ -187,7 +187,7 @@ exports.sendotp = async (req, res) => {
 
     // Check if user is already present
     // Find user with provided email
-    const checkUserPresent = await User.find({ email })
+    const checkUserPresent = await User.findOne({ email })
     // to be used in case of signup
 
     // If user found with provided email
@@ -199,7 +199,7 @@ exports.sendotp = async (req, res) => {
       })
     }
    //OTP is generate
-    var otp = otpGenerator.generate(6, {
+    var otp = await otpGenerator.generate(6, {
       upperCaseAlphabets: false,
       lowerCaseAlphabets: false,
       specialChars: false,
