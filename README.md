@@ -88,19 +88,18 @@ The back-end of StudyNotion uses several data models and database schemas to man
 
 The database for the platform is built using MongoDB, a NoSQL database that provides a flexible and scalable data storage solution. MongoDB allows for the storage of unstructured and semi-structured data. The database stores the course content, user data, and other relevant information related to the platform.
 
-![Database Schema](images/schema.png)
+![Database Schema](images/Schema.png)
 
 ### Architecture Diagram
 
 Below is a high-level diagram that illustrates the architecture of the StudyNotion EdTech platform:
 
-![Architecture](images/architecture.png)
+![Architecture](images/Architecture.png)
 
 ## API Design
 
 The StudyNotion platform's API is designed following the REST architectural style. The API is implemented using Node.js and Express.js. It uses JSON for data exchange and follows standard HTTP request methods such as GET, POST, PUT, and DELETE.
 
-For detailed API documentation and endpoints, refer to the [API Documentation](/api-docs).
 
 ## Installation
 
